@@ -2,11 +2,12 @@
   "name": "casual",
   "version": "1.4.9",
   "description": "Fake data generator",
-  "main": "src/casual.js",
+  "main": "src/casual_browserify.js",
   "scripts": {
-    "test": "make test"
+    "test": "make test",
+	"postinstall": "node generate.js"
   },
-  "repository": "https://github.com/boo1ean/casual.git",
+  "repository": "https://github.com/klowner/casual-browserify.git",
   "keywords": [
     "faker",
     "fake",
