@@ -4,8 +4,7 @@
   "description": "Fake data generator",
   "main": "src/casual_browserify.js",
   "scripts": {
-    "test": "make test",
-	"postinstall": "node generate.js"
+    "test": "make test"
   },
   "repository": "https://github.com/klowner/casual-browserify.git",
   "keywords": [
@@ -19,7 +18,8 @@
     "random",
     "mock",
     "mocking",
-    "generator"
+    "generator",
+	"browserify"
   ],
   "author": "Egor Gumenyuk <boo1ean0807@gmail.com>",
   "license": "MIT",

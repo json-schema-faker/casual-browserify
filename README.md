@@ -1,11 +1,11 @@
-## Fake data generator (Browserify "Friendly!")[![Build Status](https://travis-ci.org/klowner/casual-browserify.png?branch=master)](https://travis-ci.org/klowner/casual-browserify)
+## Fake data generator (Browserify "Friendly!")[![Build Status](https://travis-ci.org/Klowner/casual-browserify.png?branch=master)](https://travis-ci.org/Klowner/casual-browserify)
 
 ## Installation
 
 > npm install casual-browserify
 
 ## Description
-A branch of Egor Gumenyuk's excellent [casual](https://github.com/boo1ean/casual/). The purpose of
+A fork of Egor Gumenyuk's excellent [casual](https://github.com/boo1ean/casual/). The purpose of
 this branch is include static `require()` calls in order to work more happily with Browserify. As
 a side effect, the lazy-loading functionality is removed. In most cases you probably want to use
 regular [boo1ean/casual](https://github.com/boo1ean/casual/).
