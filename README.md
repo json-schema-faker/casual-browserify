@@ -337,7 +337,8 @@ There is a simple cli util which could be used to view/debug providers output:
 
 ## Contributing
 
-- [Adding new locale](https://github.com/boo1ean/casual/blob/master/locales.md)
+- Adding new locale ([please contribute to upstream (boo1ean/casual) directly](https://github.com/boo1ean/casual/))
+- Anything else, feel free to submit a pull request. :)
 
 # License
 
