@@ -97,7 +97,7 @@ function generateCasualBrowserify(done) {
 		if (err) {
 			throw err;
 		}
-		fs.writeSync(fd, "var helpers = require('./helpers');\n");
+		fs.writeSync(fd, "var helpers = require('./helpers');\n\n");
 		fs.writeSync(fd, toRequires(data));
 		fs.writeSync(fd, safeRequireSource.toString());
 		fs.writeSync(fd, template.end);
