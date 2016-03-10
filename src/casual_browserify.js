@@ -1,5 +1,4 @@
 var helpers = require('./helpers');
-
 var providers = {
     address: require('./providers/address'),
     color: require('./providers/color'),
@@ -13,6 +12,18 @@ var providers = {
 };
 
 var locales = {
+    'ar_SY': {
+         address: require('./providers/ar_SY/address'),
+         color: require('./providers/ar_SY/color'),
+         date: require('./providers/ar_SY/date'),
+         person: require('./providers/ar_SY/person'),
+         text: require('./providers/ar_SY/text')
+    },
+    'de_DE': {
+         address: require('./providers/de_DE/address'),
+         date: require('./providers/de_DE/date'),
+         person: require('./providers/de_DE/person')
+    },
     'en_CA': {
          address: require('./providers/en_CA/address')
     },
@@ -99,7 +110,9 @@ var build_casual = function() {
 		'uk_UA',
 		'nl_NL',
 		'en_CA',
-		'it_CH'
+		'it_CH',
+		'de_DE',
+		'ar_SY'
 	];
 
 	locales.forEach(casual.register_locale);
