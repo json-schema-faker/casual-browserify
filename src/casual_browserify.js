@@ -1,5 +1,4 @@
-var helpers = require('./helpers'),
-    exists = require('fs').existsSync;
+var helpers = require('./helpers');
 
 var providers = {
     address: require('./providers/address'),
