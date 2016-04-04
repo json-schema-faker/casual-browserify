@@ -1,4 +1,5 @@
 var helpers = require('./helpers');
+
 var providers = {
     address: require('./providers/address'),
     color: require('./providers/color'),
