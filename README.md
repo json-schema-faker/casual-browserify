@@ -135,6 +135,7 @@ casual.language_code   // 'ru'
 casual.locale          // 'hi_IN'
 casual.mime_type       // 'audio/mpeg'
 casual.file_extension  // 'rtf'
+casual.boolean         // true
 
 // Colors
 
