@@ -1,6 +1,6 @@
 {
   "name": "casual-browserify",
-  "version": "1.5.6",
+  "version": "1.5.8",
   "description": "Fake data generator (Browserify friendly)",
   "main": "src/casual_browserify.js",
   "scripts": {
@@ -25,8 +25,8 @@
   "author": "Egor Gumenyuk <boo1ean0807@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "mersenne-twister": "~1.0.1",
-    "moment": "~2.11.1"
+    "mersenne-twister": "^1.0.1",
+    "moment": "^2.15.2"
   },
   "devDependencies": {
     "should": "~3.1.2",
