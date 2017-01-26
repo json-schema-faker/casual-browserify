@@ -33,6 +33,9 @@ var locales = {
     'en_US': {
          address: require('./providers/en_US/address')
     },
+    'id_ID': {
+         address: require('./providers/id_ID/address')
+    },
     'it_CH': {
          address: require('./providers/it_CH/address'),
          date: require('./providers/it_CH/date'),
@@ -118,6 +121,7 @@ var build_casual = function() {
 		'uk_UA',
 		'nl_NL',
 		'en_CA',
+		'id_ID',
 		'it_CH',
 		'de_DE',
 		'ar_SY',
