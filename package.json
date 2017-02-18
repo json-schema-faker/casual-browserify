@@ -1,6 +1,6 @@
 {
   "name": "casual-cjs",
-  "version": "1.5.9",
+  "version": "1.5.10",
   "description": "Fake data generator (CommonJS friendly)",
   "main": "src/casual_cjs.js",
   "scripts": {
