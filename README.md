@@ -1,8 +1,8 @@
-## Fake data generator (Browserify "Friendly!")[![Build Status](https://travis-ci.org/Klowner/casual-browserify.png?branch=master)](https://travis-ci.org/Klowner/casual-browserify)
+## Fake data generator (CommonJS "Friendly!") [![Build Status](https://travis-ci.org/json-schema-faker/casual-cjs.png?branch=master)](https://travis-ci.org/json-schema-faker/casual-cjs)
 
 ## Installation
 
-> npm install casual-browserify
+> npm install casual-cjs
 
 ## Description
 A fork of Egor Gumenyuk's excellent [casual](https://github.com/boo1ean/casual/). The purpose of
@@ -133,7 +133,7 @@ casual.card_data            // { type: 'MasterCard', number: '5307558778577046',
 casual.country_code    // 'ES'
 casual.language_code   // 'ru'
 casual.locale          // 'hi_IN'
-casual.currency        // { symbol: 'R', name: 'South African Rand', symbol_native: 'R', decimal_digits: 2, rounding: 0, code: 'ZAR', name_plural: 'South African rand' }		
+casual.currency        // { symbol: 'R', name: 'South African Rand', symbol_native: 'R', decimal_digits: 2, rounding: 0, code: 'ZAR', name_plural: 'South African rand' }
 casual.currency_code   // 'TRY'
 casual.currency_symbol // 'TL'
 casual.currency_name   // Turkish Lira
@@ -340,9 +340,14 @@ There is a simple cli util which could be used to view/debug providers output:
 	 # Will render table with columns [generator_name, result] only for person provider
 	node utils/show.js person
 
-## Browserify support
+## CommonJS support
 
-Currently you can't use casual with browserify. Please check out this browserify-friendly fork [Klowner/casual-browserify](https://github.com/Klowner/casual-browserify)
+Currently you can't use casual with browserify, rollup, webpack, etc.
+
+Please check out this cjs-friendly forks:
+
+- [Klowner/casual-browserify](https://github.com/Klowner/casual-browserify)
+- [json-schema-faker/casual-cjs](https://github.com/json-schema-faker/casual-cjs)
 
 ## Contributing
 
