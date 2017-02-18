@@ -44,7 +44,7 @@ function toRequires(sources) {
 			return out;
 		};
 
-	a('var providers = {\n');
+	a('var _providers = {\n');
 	a(asObject(sources.providers, './providers/', '    '));
 	a('\n};\n\n');
 
@@ -91,9 +91,9 @@ function createTemplate() {
 function generateCasualBrowserify(done) {
 	var data = getDataSources(),
 		template = createTemplate(),
-		safeRequireSource = fs.readFileSync(srcpath + '/safe_require_browserify.js');
+		safeRequireSource = fs.readFileSync(srcpath + '/safe_require_cjs.js');
 
-	fs.open(srcpath + '/casual_browserify.js', 'w', function (err, fd) {
+	fs.open(srcpath + '/casual_cjs.js', 'w', function (err, fd) {
 		if (err) {
 			throw err;
 		}

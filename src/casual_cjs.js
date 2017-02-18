@@ -2,7 +2,7 @@
 
 var helpers = require('./helpers');
 
-var providers = {
+var _providers = {
     address: require('./providers/address'),
     color: require('./providers/color'),
     date: require('./providers/date'),
@@ -72,7 +72,6 @@ var safe_require = function(filename) {
 };
 
 
-
 var build_casual = function() {
 	var casual = helpers.extend({}, helpers);
 
@@ -106,8 +105,10 @@ var build_casual = function() {
 
 			providers.forEach(function(provider) {
 				casual.register_provider(helpers.extend(
-					require('./providers/' + provider),
-					safe_require(__dirname + '/providers/' + locale + '/' + provider)
+					// allow safe_require to work on non-wrapped bundles (e.g. rollupjs)
+					_providers ? _providers[provider] : require('./providers/' + provider),
+					// discarded, otherwise rollup.js will call commonjsRequire()
+					safe_require((typeof __dirname !== 'undefined' ? __dirname : '') + '/providers/' + locale + '/' + provider)
 				));
 			});
 

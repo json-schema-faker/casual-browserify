@@ -1,13 +1,13 @@
 {
-  "name": "casual-browserify",
+  "name": "casual-cjs",
   "version": "1.5.9",
-  "description": "Fake data generator (Browserify friendly)",
-  "main": "src/casual_browserify.js",
+  "description": "Fake data generator (CommonJS friendly)",
+  "main": "src/casual_cjs.js",
   "scripts": {
     "test": "make test",
     "generate": "node ./scripts/generate.js"
   },
-  "repository": "https://github.com/klowner/casual-browserify.git",
+  "repository": "https://github.com/json-schema-faker/casual-cjs.git",
   "keywords": [
     "faker",
     "fake",
@@ -20,7 +20,11 @@
     "mock",
     "mocking",
     "generator",
-	"browserify"
+    "browserify",
+    "webpack",
+    "rollup",
+    "commonjs",
+    "cjs"
   ],
   "author": "Egor Gumenyuk <boo1ean0807@gmail.com>",
   "license": "MIT",
@@ -29,9 +33,9 @@
     "moment": "^2.15.2"
   },
   "devDependencies": {
-    "should": "~3.1.2",
     "mocha": "~1.17.1",
-    "text-table": "~0.2.0",
-    "realist": "~0.2.5"
+    "realist": "~0.2.5",
+    "should": "~3.1.2",
+    "text-table": "~0.2.0"
   }
 }

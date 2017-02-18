@@ -1,3 +1,4 @@
+var _providers;
 var helpers = require('./helpers');
 var exists = require('fs').existsSync;
 
@@ -41,8 +42,9 @@ var build_casual = function() {
 
 			providers.forEach(function(provider) {
 				casual.register_provider(helpers.extend(
-					require('./providers/' + provider),
-					safe_require(__dirname + '/providers/' + locale + '/' + provider)
+					// allow safe_require to work on non-wrapped bundles (e.g. rollupjs)
+					_providers ? _providers[provider] : require('./providers/' + provider),
+					safe_require((typeof __dirname !== 'undefined' ? __dirname : '') + '/providers/' + locale + '/' + provider)
 				));
 			});
 
